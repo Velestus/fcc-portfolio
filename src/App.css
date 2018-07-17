@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+#navbar {
+  padding: 20px;
+}
+#navbar li {
+  display: inline;
+  list-style: none;
+  padding-right: 46px;
+}
+#navbar a {
+  text-decoration: none;
+  color: hsl(0, 5%, 95%);
+}
+.App-title {
+  font-size: 1.5em;
+}
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 15%, 80%);
+  font-size: large;
+}
+main > section {
+  min-height: 100vh;
+}
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 100px;
+}
+#projects-desc {
+  font-size: large;
+  font-weight: thin;
+  flex:0 0 100%;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid hsl(240, 40%, 70%);
+  width: 400px;
+  height: auto;
+  margin: 20px;
+}
+.project-caption {
+  text-decoration: none;
+  padding: 26px;
+  font-size: 1.5em;
+  border-bottom: 2px solid hsl(240, 40%, 70%);
+  color: hsl(240, 40%, 50%);
+}
+.project-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 40px 0;
+}
+#profile-section {
+  background-color: hsl(0, 15%, 80%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+#profile-caption {
+  flex: 0 0 100%;
+  margin-bottom: -100px;
+}
+.link {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid hsl(240, 40%, 40%);
+  background-color: hsl(120, 40%, 60%);
+  color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 40px;
+  text-decoration: none;
+}
+.link:hover {
+  background-color: hsl(120, 40%, 70%);
+  cursor: pointer;
+}
+@media only screen and (max-width: 367px) {
+  .link {
+    width: 200px;
+    height: 50px;
+    border-radius: 0%;
+  }
+}
